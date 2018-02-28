@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile_update"
+            android:icon="@drawable/ic_action_user"
+            android:title="Profile Update" />
+
+        <item
+            android:id="@+id/nav_suggestions_query"
+            android:icon="@drawable/ic_action_query"
+            android:title="Suggestions &#38; Query"/>
+
+        <item
+            android:id="@+id/nav_contact_us"
+            android:icon="@drawable/ic_action_phone"
+            android:title="Contact Us" />
+
+        <item
+            android:id="@+id/nav_share"
+            android:title="Share App"
+            android:icon="@drawable/ic_action_share"
+            />
+
+        <item
+            android:id="@+id/nav_rateus"
+            android:title="Rate us"
+            android:icon="@drawable/ic_action_rate"
+            />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_action_logout"
+            android:title="Logout" />
+    </group>
+
+    <!--<item android:title="Communicate">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_share"-->
+                <!--android:title="Share" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_send"-->
+                <!--android:title="Send" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+</menu>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait"
+    tools:context="com.knit.iei.ieiknit.ContactUS"
+    android:background="@drawable/gradient">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_height="match_parent">
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/logoo"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:layout_below="@+id/logoo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:id="@+id/general"
+        android:screenOrientation="portrait"
+        android:layout_centerHorizontal="true"
+        android:text="Give us a Chance to Help"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/generalquery"
+        android:layout_below="@+id/general"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="For General Query Mail us At"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tempmail"
+        android:background="@drawable/buttons"
+        android:clickable="true"
+        android:onClick="gnrlmail"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_action_mail"
+        android:layout_below="@+id/generalquery"
+        android:text="................"
+        android:textColor="#fff"/>
+
+    <RelativeLayout
+        android:layout_below="@+id/tempmail"
+        android:id="@+id/contnt1"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/ayush"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:clickable="false"
+            android:textColor="#fff"
+            android:text="..............."/>
+
+        <TextView
+            android:id="@+id/email1"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttons"
+            android:layout_below="@+id/ayush"
+            android:clickable="true"
+            android:onClick="aysmail"
+            android:drawableLeft="@drawable/ic_action_mail"
+            android:text="............."
+            android:textColor="#fff"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/phone1"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email1"
+            android:clickable="true"
+            android:onClick="aysphone"
+            android:background="@drawable/buttons"
+            android:drawableLeft="@drawable/ic_action_phoneno"
+            android:text="..........."
+            android:textColor="#fff"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/contnt1"
+        android:id="@+id/contnt2"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/utkarsh"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:clickable="false"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:text=".........."/>
+
+        <TextView
+            android:id="@+id/email2"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/utkarsh"
+            android:clickable="true"
+            android:onClick="utkmail"
+            android:background="@drawable/buttons"
+            android:drawableLeft="@drawable/ic_action_mail"
+            android:text="............"
+            android:textColor="#fff"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/phone2"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email2"
+            android:clickable="true"
+            android:onClick="utkphone"
+            android:background="@drawable/buttons"
+            android:drawableLeft="@drawable/ic_action_phoneno"
+            android:text="..............."
+            android:textColor="#fff"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/contnt2"
+        android:id="@+id/contnt3"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/Apoorva"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:clickable="false"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:text=".............."/>
+
+        <TextView
+            android:id="@+id/email3"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Apoorva"
+            android:clickable="true"
+            android:onClick="aprmail"
+            android:background="@drawable/buttons"
+            android:drawableLeft="@drawable/ic_action_mail"
+            android:text="............"
+            android:textColor="#fff"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/phone3"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email3"
+            android:background="@drawable/buttons"
+            android:clickable="true"
+            android:onClick="aprphone"
+            android:drawableLeft="@drawable/ic_action_phoneno"
+            android:text=".........."
+            android:textColor="#fff"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/contnt3"
+        android:id="@+id/contnt4"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/Raghav"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:clickable="false"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:text="............"/>
+
+        <TextView
+            android:id="@+id/email4"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/buttons"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Raghav"
+            android:clickable="true"
+            android:onClick="rgvmail"
+            android:drawableLeft="@drawable/ic_action_mail"
+            android:text="............."
+            android:textColor="#fff"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/phone4"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email4"
+            android:clickable="true"
+            android:onClick="rgvphone"
+            android:background="@drawable/buttons"
+            android:drawableLeft="@drawable/ic_action_phoneno"
+            android:text="............."
+            android:textColor="#fff"
+            android:textSize="16dp" />
+
+
+    </RelativeLayout>
+        </RelativeLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

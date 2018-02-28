@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:screenOrientation="portrait"
+    tools:context="com.knit.iei.ieiknit.SuggQuery">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/l1"
+        android:layout_centerHorizontal="true">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_marginTop="10dp"
+        android:id="@+id/qlogo"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/l1"
+        android:id="@+id/l2"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+       <EditText
+           android:layout_width="250dp"
+           android:layout_height="40dp"
+           android:layout_marginTop="20dp"
+           android:id="@+id/name"
+           android:hint="Enter Your Name"
+           android:textColor="#fff"
+           android:textColorHint="#fff"
+           android:drawableLeft="@drawable/ic_action_user"
+           />
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:id="@+id/number"
+            android:textColor="#fff"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="20dp"
+            android:hint="Your Contact Number"
+            android:textColorHint="#fff"
+            android:drawableLeft="@drawable/ic_action_phone"
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/l2"
+        android:id="@+id/ques"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:hint="Write Your Query Or Suggestions"
+        android:textColorHint="#fff" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/qsubmitt"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:onClick="qsubmit"
+        android:layout_below="@+id/ques"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        app:cardBackgroundColor="#ae200d"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Submit"
+                android:textColor="#fff"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
